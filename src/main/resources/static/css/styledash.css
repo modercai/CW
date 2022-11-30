@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 ,
+h2{
+    color: darkgreen;
+}
+
+.btn {
+    background: darkgreen;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.btn:hover{
+    color: darkgreen;
+    background: white ;
+    padding: 3px 8px;
+    border: 2px solid  darkgreen;
+
+
+}
+
+.h3{
+    color: gray;
+}
+
+.title{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 15px 10px ;
+    border-bottom: 2px solid gainsboro ;
+}
+
+table{
+    padding: 10px;
+}
+
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+
+.sidenav{
+    position: fixed;
+    background:#07521d42 ;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav .action-name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidenav li{
+    font-size: 24px;
+    padding: 10px 40px ;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.sidenav li:hover{
+    background: white;
+    color: green;
+    
+}
+
+.container{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: white;
+
+}
+.container .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.container .header .nav .search{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.container .header .nav .search input[type=text]{
+    border: none;
+    background: #f1f1f1;
+    padding: 10px;
+    width: 50%;
+
+}
+
+.container .header .nav .search button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+.container .header .nav .search button img {
+    width: 30px;
+    height: 30px ;
+}
+       
+ .container .header .nav .user{
+     flex: 1;
+     
+    }
+
+    .container .content{
+        position: relative;
+        margin-top: 10vh;
+        min-height: 90vh;
+        background: white;
+
+
+    }
+
+    .container .content .cards{
+        padding:20px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    .container .content .cards .card{
+        width: 250px;
+        height: 150px;
+        background:gray;
+        margin: 10px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 1.9);
+
+    }
+
+    .container .content .content-2{
+        min-height: 60vh;
+        display:flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .container .content .content-2 .recent-uploads{
+        min-height: 50vh ;
+        flex: 5;
+        background: white;
+        margin: 0 25px 25px 25px;
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 1.9);
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .container .content .content-2 .new-sections{
+        flex: 2;
+        background: white;
+        min-height: 50vh;
+        margin: 0 25px;
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 1.9);
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .container .content .content-2 .new-sections table td:nth-child(1) img{
+        height: 40px;
+        width: 40px;
+
+
+    }
+
+    @media screen and (max-width:1050px) {
+        .sidenav li{
+            font-size: 18px;
+        }
+
+    @media screen and (max-width:940px){
+        .sidenav li span{
+            display: none;
+
+        }
+
+        .sidenav li img {
+            width: 40px;
+            height: 40px;
+
+        }
+    }
+        @media screen and (max-width:536px){
+            .action-name h1 {
+                font-size: 16px;
+            }
+
+            .container .content .cards{
+                justify-content: center;
+            }
+
+            .sidenav li img {
+                width: 30px;
+                height:30px;
+            }
+
+            .sidenav li:hover{
+                background: green; 
+                padding: 8px 38px;
+                border: 2px solid width  ;
+            }
+
+           .container .content .content-2 .recent-uploads table th:nth-child(2),
+           .container .content .content-2 .recent-uploads table td:nth-child(2){
+               display: none;
+           }
+
+           }
+
+        }
+    
+    
