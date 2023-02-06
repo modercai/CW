@@ -1,0 +1,57 @@
+1. use already existing User interface
+2. Try to make combinations from different projects and make one big project.
+3. Try to do it in less than a month to leave time for making money.
+
+Try-------Payment  App mixed with a Loan calculator
+
+
+
+Add the printing and sharing(social media advertisement using  a link) functionalities as well.
+
+SignUp/Login
+Deposit/Withdraw cash
+Create/Join group
+Get a loan
+
+
+
+Flutter payment for a single user?
+---------------------------------------------------------------------------------------------
+1. make a one way payment gateway to archive the deposit without withdraw.
+2. twist the concepts and learn a bit more see if the API's can be manipulated.
+---------------------------------------------------------------------------------------------
+Loan Application Functionality
+STEPS T FOLLOW:
+1. Create method for writing data to firebase and call it in the ontap/on pressed method.
+2. make sure the TextFields have controllers
+3. call the firebase instance created earlier 
+4. use models if applicable 
+5. model -> database -> in the actual Loan Application page make 1 method called applyLoan, be sure that the method has the currentuser state and then call the method in the database.dart file via await Database()."method name here" 
+
+ISSUES :
+1. how to use models to write data to the database.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. I am going to make this work(My Name is Malate  Friday kamuli).
